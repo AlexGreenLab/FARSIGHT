@@ -31,15 +31,15 @@ Use the file input_aptamer_set.m to specify the reporter aptamers that you want 
 ## 2. Define the FARSIGHT designs to generate
 The next step is to define a set of different FARSIGHT designs with varying domain lengths and binding sites along the target transcript. For each target/reporter aptamer combination, the code will define ~72 FARSIGHT design combinations. To do this, run the following in Matlab:
 
-`FARSIGHT_stage1_define`
+`FARSIGHT_stage1_define;`
 
 ## 3. Generate the FARSIGHT designs
-This stage is the most time consuming part of FARSIGHT generation. The code will take in the set of designs defined in stage 1 and use NUPACK multi-objective design to generate RNA sequences that satisfy the specified secondary structure and sequence constraints. To begin this process, run the following in Matlab:
+This stage is the most time consuming part of FARSIGHT generation. The code will take in the set of designs defined in stage 1 and use NUPACK multi-objective design to generate RNA sequences that satisfy the specified secondary structure and sequence constraints. It will also calculate the free energies and defect levels of the FARSIGHT sequences generated. To begin this process, run the following in Matlab:
 
-`FARSIGHT_stage2_generate`
+`FARSIGHT_stage2_generate;`
 
 To reduce the time needed for this stage, you can call this script using a command-line terminal and run it using multiple Matlab instantiations. To do this in macOS, open a Terminal window and navigate to the install folder. Then run the command below:
 
 `/Applications/MATLAB_R2024b.app/bin/matlab < FARSIGHT_stage2_generate.m`
 
-Replace the `/Applications/MATLAB_R2024b.app/bin/matlab` with the appropriate command to start Matlab depending on its install location. You can run this command in multiple terminal windows depending on the number of processors cores on your computer and the amount of memory. It is also possible to use parallel processing in FARSIGHT_stage2_generate.m to speed up the design process by changing the loops on Lines 74 and 190 from `for` to `parfor`. However, this parallelization approach often leads to Matlab stalling and slower performance compared to the Terminal approach.
+Replace the `/Applications/MATLAB_R2024b.app/bin/matlab` with the appropriate command to start Matlab depending on its install location. You can run this command in multiple terminal windows depending on the number of processors cores and the amount of memory of your computer. It is also possible to use parallel processing in FARSIGHT_stage2_generate.m to speed up the design process by changing the loops on Lines 74 and 190 from `for` to `parfor`. However, this parallelization approach often leads to Matlab stalling and slower performance compared to the Terminal approach. FARSIGHT_stage2_generate is designed so that it can be terminated at any time and resume operation without causing errors.
