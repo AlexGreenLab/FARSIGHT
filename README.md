@@ -21,3 +21,7 @@ This file will be run whenever a bash shell is opened and can be used to set env
 After setting the environment variables, Matlab will need to be opened from a terminal window to use NUPACK based functions. A sample command to open Matlab is below and will vary depending on the Matlab install directory:
 
 `/Applications/MATLAB_R2024b.app/bin/matlab`
+
+# Running FARSIGHT Design Code
+## 1. Specify target sequences and reporter aptamers
+Use the file mutant_target_input.csv in the install folder to provide information on the sequences that you want to detect. Provide a name for your target sequence and the wild-type (WT) and mutant (SNP) target sequences. The FARSIGHT code will design sensors for detection of the 
