@@ -36,7 +36,7 @@ The next step is to define a set of different FARSIGHT designs with varying doma
 `FARSIGHT_stage1_define`
 
 ## 3. Generate the FARSIGHT designs
-This stage is the most time-consuming part of the FARSIGHT design process. The code will take in the set of design definitions compiled in stage 1 and use NUPACK multi-objective design to generate RNA sequences that satisfy the specified secondary structure and sequence constraints. It will also calculate the free energies and defect levels of the FARSIGHT sequences generated. The code will generate `num_designs_overall' designs for each FARSIGHT domain length combination and aptamer/target combination. By default, `num_designs_overall = 2` but it can be changed to reduce design time or increase the range of designs. To begin this process, run the following in Matlab:
+This stage is the most time-consuming part of the FARSIGHT design process. The code will take in the set of design definitions compiled in stage 1 and use NUPACK multi-objective design to generate RNA sequences that satisfy the specified secondary structure and sequence constraints. It will also calculate the free energies and defect levels of the FARSIGHT sequences generated. The code will generate `num_designs_overall` designs for each FARSIGHT domain length combination and aptamer/target combination. By default, `num_designs_overall = 2` but it can be changed to reduce design time or increase the range of designs. To begin this process, run the following in Matlab:
 
 `FARSIGHT_stage2_generate`
 
