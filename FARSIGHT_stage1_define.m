@@ -1,3 +1,13 @@
+%{ 
+    FARSIGHT Design Code v. 1.0
+
+    Design Stage 1: Definition of parameters for FARSIGHT designs to be generated
+
+    Copyright (c) 2025 Alexander A. Green/Department of Biomedical Engineering, Boston University
+    This project is licensed under an Academic Open Source License - see LICENSE.txt file for details
+    Contact: aagreen@bu.edu
+%} 
+
 addpath('lib');
 T = 37;
 Ns = char(zeros(1,1000)+'N');

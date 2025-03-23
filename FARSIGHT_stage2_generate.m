@@ -1,3 +1,13 @@
+%{ 
+    FARSIGHT Design Code v. 1.0
+
+    Design Stage 2: Generation and analysis of FARSIGHT designs
+
+    Copyright (c) 2025 Alexander A. Green/Department of Biomedical Engineering, Boston University
+    This project is licensed under an Academic Open Source License - see LICENSE.txt file for details
+    Contact: aagreen@bu.edu
+%} 
+
 addpath('lib');
 Ns = char(zeros(1,10000)+'N');
 base_prevented = ['T06';'A06';'C04';'G04';'K10';'M10';'R10';'S10';'W10';'Y10'];

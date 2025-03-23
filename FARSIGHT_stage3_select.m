@@ -1,3 +1,13 @@
+%{ 
+    FARSIGHT Design Code v. 1.0
+
+    Design Stage 3: Compilation, scoring, and selection of top FARSIGHT designs
+
+    Copyright (c) 2025 Alexander A. Green/Department of Biomedical Engineering, Boston University
+    This project is licensed under an Academic Open Source License - see LICENSE.txt file for details
+    Contact: aagreen@bu.edu
+%} 
+
 addpath('lib');
 base_file_dir = [pwd,'/NUPACK_base_designs'];
 base_mfile_dir = pwd;
